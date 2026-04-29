@@ -1,7 +1,7 @@
 const {a, b, c, d, e, f} = require('./mathEquations')
 
 describe('math', () => {
-  test('a is 0', () => {
+  test.skip('a is 0', () => {
     expect(a).toEqual(0);
   });
   test.skip('b is 9', () => {
@@ -16,7 +16,7 @@ describe('math', () => {
   test.skip('e is -8', () => {
     expect(e).toEqual(-8);
   });
-  test.skip('f is 68', () => {
+  test('f is 68', () => {
     expect(f).toEqual(68);
   });
 });
