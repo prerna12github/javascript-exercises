@@ -1,7 +1,7 @@
 const repeatString = require('./repeatString')
 
 describe('repeatString', () => {
-  test('repeats the string', () => {
+  test.skip('repeats the string', () => {
     expect(repeatString('hey', 3)).toEqual('heyheyhey');
   });
   test.skip('repeats the string many times', () => {
@@ -29,7 +29,7 @@ describe('repeatString', () => {
   test.skip('returns ERROR with negative numbers', () => {
     expect(repeatString('goodbye', -1)).toEqual('ERROR');
   });
-  test.skip('works with blank strings', () => {
+  test('works with blank strings', () => {
     expect(repeatString('', 10)).toEqual('');
   });
 });
